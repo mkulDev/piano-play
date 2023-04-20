@@ -1,0 +1,118 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="stylesheet" href="./style.css" type="text/css" />
+    <title>Piano</title>
+  </head>
+  <body>
+    <nav>
+      <h2>- JS Piano project</h2>
+    </nav>
+    <main>
+      <div class="currentKey"><span class="playedNote2">Current key:</span><br /><span class="playedNote"></span></div>
+      <div class="keyboard">
+        <div class="key" data-key="KeyA" data-note="C">
+          <span class="descriptions">A</span>
+        </div>
+
+        <div class="key" data-key="KeyS" data-note="D">
+          <span class="descriptions">S</span>
+        </div>
+
+        <div class="key" data-key="KeyD" data-note="E">
+          <span class="descriptions">D</span>
+        </div>
+
+        <div class="key" data-key="KeyF" data-note="F">
+          <span class="descriptions">F</span>
+        </div>
+
+        <div class="key" data-key="KeyG" data-note="G">
+          <span class="descriptions">G</span>
+        </div>
+
+        <div class="key" data-key="KeyH" data-note="A">
+          <span class="descriptions">H</span>
+        </div>
+
+        <div class="key" data-key="KeyJ" data-note="B">
+          <span class="descriptions">J</span>
+        </div>
+
+        <div class="key" data-key="KeyK" data-note="C2">
+          <span class="descriptions">K</span>
+        </div>
+
+        <div class="key" data-key="KeyL" data-note="D2">
+          <span class="descriptions">L</span>
+        </div>
+
+        <div class="key" data-key="Semicolon" data-note="E2">
+          <span class="descriptions">;</span>
+        </div>
+        <div class="black-set">
+          <div class="black-key" data-key="KeyW" data-note="C~">
+            <span class="descriptions"></span>
+          </div>
+          <div class="black-key" data-key="KeyE" data-note="D~">
+            <span class="descriptions"></span>
+          </div>
+          <div class="black-key hidden">
+            <span class="descriptions"></span>
+          </div>
+          <div class="black-key" data-key="KeyT" data-note="F~">
+            <span class="descriptions"></span>
+          </div>
+          <div class="black-key" data-key="KeyY" data-note="G~">
+            <span class="descriptions"></span>
+          </div>
+          <div class="black-key" data-key="KeyU" data-note="A~">
+            <span class="descriptions"></span>
+          </div>
+          <div class="black-key hidden">
+            <span class="descriptions"></span>
+          </div>
+          <div class="black-key" data-key="KeyO" data-note="C2~">
+            <span class="descriptions"></span>
+          </div>
+          <div class="black-key" data-key="KeyP" data-note="E2~">
+            <span class="descriptions"></span>
+          </div>
+        </div>
+      </div>
+
+      <div id="conteiner">
+        <span id="info"
+          >Please type only the following characters separated by a space:<br />
+          c d e f g a h c2 d2 e2 c~ d~ f~ g~ a~ c2~ d2~</span
+        >
+
+        <textarea id="input" name="" rows="3" cols="50"></textarea>
+        <div id="button"><span class="button-text">PLAY</span></div>
+      </div>
+    </main>
+    <section id="music">
+      <audio data-key="KeyA" src="./resourcess/audio/0.wav" data-note="C"></audio>
+      <audio data-key="KeyW" src="./resourcess/audio/1.wav" data-note="C~"></audio>
+      <audio data-key="KeyS" src="./resourcess/audio/2.wav" data-note="D"></audio>
+      <audio data-key="KeyE" src="./resourcess/audio/3.wav" data-note="D~"></audio>
+      <audio data-key="KeyD" src="./resourcess/audio/4.wav" data-note="E"></audio>
+      <audio data-key="KeyF" src="./resourcess/audio/5.wav" data-note="F"></audio>
+      <audio data-key="KeyT" src="./resourcess/audio/6.wav" data-note="F~"></audio>
+      <audio data-key="KeyG" src="./resourcess/audio/7.wav" data-note="G"></audio>
+      <audio data-key="KeyY" src="./resourcess/audio/8.wav" data-note="G~"></audio>
+      <audio data-key="KeyH" src="./resourcess/audio/9.wav" data-note="A"></audio>
+      <audio data-key="KeyU" src="./resourcess/audio/10.wav" data-note="A~"></audio>
+      <audio data-key="KeyJ" src="./resourcess/audio/11.wav" data-note="B"></audio>
+      <audio data-key="KeyK" src="./resourcess/audio/12.wav" data-note="C2"></audio>
+      <audio data-key="KeyO" src="./resourcess/audio/13.wav" data-note="C2~"></audio>
+      <audio data-key="KeyL" src="./resourcess/audio/14.wav" data-note="D2"></audio>
+      <audio data-key="KeyP" src="./resourcess/audio/15.wav" data-note="D2~"></audio>
+      <audio data-key="Semicolon" src="./resourcess/audio/16.wav" data-note="E2"></audio>
+    </section>
+    <script src="./main.js"></script>
+  </body>
+</html>

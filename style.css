@@ -1,0 +1,151 @@
+html {
+  margin: 0px;
+  font-size: 16px;
+  font-family: Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;
+  font-weight: lighter;
+}
+
+body {
+  background-color: black;
+  background-image: url('./resourcess/images/oldpiano2.jpg');
+  background-repeat: no-repeat;
+  background-size: cover;
+}
+
+.keyboard {
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+  width: 100%;
+  height: 350px;
+  max-width: 880px;
+  position: relative;
+  margin: 40px auto 0;
+  cursor: none;
+  border: 4px solid black;
+  background-color: black;
+}
+
+.black-set {
+  padding: 0% 4.5%;
+  display: flex;
+  position: absolute;
+  flex-direction: row;
+  justify-content: space-around;
+  width: 100%;
+  height: 200px;
+  z-index: 2;
+  box-sizing: border-box;
+}
+
+.key {
+  width: 9%;
+  height: 350px;
+  border: 2px solid black;
+  border-radius: 0.5rem;
+  box-sizing: border-box;
+  box-shadow: -1px -1px 1px rgba(240, 240, 240, 0.2) inset, 0 -5px 2px 3px rgba(0, 0, 0, 0.6) inset, 0 2px 4px rgba(0, 0, 0, 0.5);
+  background: linear-gradient(to right, rgb(203, 203, 203), rgb(237, 237, 237));
+  display: flex;
+  justify-content: center;
+}
+
+.black-key {
+  width: 5%;
+  height: 200px;
+  border: 4px solid black;
+  border-radius: 0.5rem;
+  box-sizing: border-box;
+  z-index: 2;
+  box-shadow: -1px -1px 1px rgba(240, 240, 240, 0.2) inset, 0 -5px 2px 3px rgba(0, 0, 0, 0.6) inset, 0 2px 4px rgba(0, 0, 0, 0.5);
+  background: linear-gradient(to right, rgb(0, 0, 0), rgb(56, 56, 56));
+}
+
+.hidden {
+  visibility: hidden;
+}
+
+.hitting {
+  transform: scale(0.98);
+  border-color: rgba(255, 217, 0, 0.4);
+  box-shadow: 0 0 10px #faf2a9;
+}
+
+.currentKey {
+  margin: 20px auto 120px auto;
+  width: 400px;
+  height: 50px;
+  text-align: center;
+}
+
+.playedNote {
+  font-size: 6em;
+  color: rgba(230, 230, 230, 1);
+}
+
+.playedNote2 {
+  padding: 2px 20px;
+  background: linear-gradient(to left, rgba(0, 0, 0, 0.493), rgba(56, 56, 56, 0));
+  font-size: 3em;
+  color: rgba(230, 230, 230, 1);
+}
+
+#button {
+  margin: 20px auto;
+  text-align: center;
+  width: 100px;
+  height: 50px;
+  cursor: pointer;
+}
+
+#button :hover {
+  background-color: rgba(230, 230, 230, 0.4);
+}
+
+.button-text {
+  color: rgba(230, 230, 230, 1);
+  font-size: 2em;
+  padding: 2px 20px;
+  text-align: center;
+  border: 2px solid rgba(230, 230, 230, 1);
+  background-color: rgba(230, 230, 230, 0.1);
+}
+
+#input {
+  background-color: rgba(230, 230, 230, 0.1);
+  font-size: 1.5em;
+  color: rgba(230, 230, 230, 1);
+  border: 2px solid rgba(230, 230, 230, 0.6);
+  margin-top: 10px;
+}
+
+#conteiner {
+  margin: 30px auto;
+  text-align: center;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+}
+
+#info {
+  font-size: 1.25em;
+  color: rgba(230, 230, 230, 1);
+}
+
+h2 {
+  font-size: 3em;
+  color: rgba(230, 230, 230, 1);
+  text-align: center;
+  font-weight: lighter;
+  background: linear-gradient(to left, rgba(0, 0, 0, 0.493), rgba(56, 56, 56, 0));
+  padding: 10px 4px;
+}
+
+.key .descriptions {
+  opacity: 0.8;
+  position: absolute;
+  bottom: 20px;
+  z-index: 10;
+  font-size: 22px;
+}
